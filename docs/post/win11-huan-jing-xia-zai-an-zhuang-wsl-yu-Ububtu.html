@@ -10,9 +10,9 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="hello world。">
+<meta name="description" content="下载wsl花了较多时间，之前执行wsl --install总是在中途失败，下载速度又很慢。">
 <meta property="og:title" content="win11环境下载安装wsl与Ububtu">
-<meta property="og:description" content="hello world。">
+<meta property="og:description" content="下载wsl花了较多时间，之前执行wsl --install总是在中途失败，下载速度又很慢。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://kilolololo.github.io/post/win11-huan-jing-xia-zai-an-zhuang-wsl-yu-Ububtu.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/239533855?v=4&size=64">
@@ -73,7 +73,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p>hello world</p></div>
+<div class="markdown-body" id="postBody"><p>下载wsl花了较多时间，之前执行wsl --install总是在中途失败，下载速度又很慢。下面的方法一次成功了。<br>
+windows powershell以管理员身份运行，执行命令<br>
+<code class="notranslate">wsl --install --distribution Ubuntu-24.04 --location D:\WSL\Ubuntu</code></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
