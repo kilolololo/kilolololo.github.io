@@ -11,15 +11,11 @@ tags: [博客]
 
 ### 二、现象
 1、使用version 5 编译器，遇到问题（原工程使用也是AC5
-```c
-D:\keil\Arm\Pack\ARM\CMSIS\6.1.0\CMSIS\Core\Include\cmsis_compiler.h(287): error:  #35: #error directive: Unknown compiler.
-    #error Unknown compiler.
-```
+`D:\keil\Arm\Pack\ARM\CMSIS\6.1.0\CMSIS\Core\Include\cmsis_compiler.h(287): error:  #35: #error directive: Unknown compiler.#error Unknown compiler`
+
 2、改成ARM Compiler 6.22
-```c
-compiling TransformFunctionsF16.c...
-armclang: error: unknown argument: '--diag_suppress=186,66'
-```
+`compiling TransformFunctionsF16.c...armclang: error: unknown argument: '--diag_suppress=186,66'`
+
 ### 三、排查过程
 查找网络说是CMSIS 6.1.0不支持Compiler V5.06了。但实际上，我有两个工程文件，一个能编译一个不能，二者在RTE里面CMSIS都选择的6.1.0.产生矛盾。
 
@@ -29,8 +25,8 @@ armclang: error: unknown argument: '--diag_suppress=186,66'
 下载更低版本的CMSIS如5.9.0
 https://forum.anfulai.cn/forum.php?mod=viewthread&tid=96992
 下载CMSIS后双击安装，然后在keil里进入Pack Installer，移除6.1.0。
-![](D:\kilo\app\workTools\my-website/assets/img/keil_unknownCompiler/image-1.png)
+![](/assets/img/keil_unknownCompiler/image-1.png)
 接下来检查RTE里CMSIS的版本
-![alt text](D:\kilo\app\workTools\my-website/assets/img/keil_unknownCompiler/image.png)
+![alt text](/assets/img/keil_unknownCompiler/image.png)
 
 以上完成后可正常编译。
