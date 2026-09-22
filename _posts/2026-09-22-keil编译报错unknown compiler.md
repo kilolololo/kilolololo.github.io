@@ -29,8 +29,8 @@ armclang: error: unknown argument: '--diag_suppress=186,66'
 下载更低版本的CMSIS如5.9.0
 https://forum.anfulai.cn/forum.php?mod=viewthread&tid=96992
 下载CMSIS后双击安装，然后在keil里进入Pack Installer，移除6.1.0。
-![](/assets/img/keil_unknownCompiler/image-1.png)
+![](D:\kilo\app\workTools\my-website/assets/img/keil_unknownCompiler/image-1.png)
 接下来检查RTE里CMSIS的版本
-![alt text](/assets/img/keil_unknownCompiler/image.png)
+![alt text](D:\kilo\app\workTools\my-website/assets/img/keil_unknownCompiler/image.png)
 
 以上完成后可正常编译。
